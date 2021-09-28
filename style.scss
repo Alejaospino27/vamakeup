@@ -1,0 +1,291 @@
+$colorUno:rgb(77, 12, 107);
+$colorFondo:rgb(193, 166, 199);
+$colorTitulos:rgb(75, 13, 70);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#inicio1{
+    text-align: center;
+    background:$colorUno;
+    color: white;
+
+    h2{
+        font-size: medium;
+       
+    }
+}
+
+#navbar{
+    padding: 0px;
+    height: 80px;
+    font-size: x-large;
+}
+
+
+
+h2{
+    text-align: center
+  
+  }
+  
+
+.container-pro{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 30px;
+
+    div{
+        padding: 5px;
+        margin: 5px;
+        border: 0.5px solid $colorUno;
+        width: 380px;
+        border-radius: 15px;
+        text-align: center;
+    }
+
+    img{
+        height: 250px;
+        height: 250px;
+    }
+}
+
+.slider{
+margin-bottom: 20px;
+    img{
+        width: 100%;
+        height: 500px;
+    }
+}
+
+
+.container-dest{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    margin-bottom: 50px;
+
+    .cuadro{
+        padding: 5px;
+        margin: 15px;
+        width: 250px;
+        text-align: center;
+
+        figure{
+            position: relative;
+            box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+            cursor: pointer;
+
+             img{
+                 width: 200px;
+                 height: 200px;
+                 transition: all 500ms ease-out;
+             }
+
+            .capa{
+                position:absolute;
+                height: 100%;
+                width: 100%;
+                top: 0;
+                background: rgba(135, 91, 160, 0.7);
+                transition: all 500ms ease-out;
+                opacity: 0;
+                visibility: hidden;
+                text-align: center;
+            }
+
+        }
+        figure:hover > .capa {
+            opacity: 1;
+            visibility: visible;
+            
+
+
+        }
+    }
+}
+
+.container-form{
+    padding: 20px;
+    border: 1px solid black;
+   justify-content: center;
+   align-items: center;
+    text-align: center;
+   width: 600px; 
+   height: 100%;
+   margin-left: 400px;
+   margin-right: 400px;
+   background:$colorFondo;
+   
+    
+
+}
+
+.container-histo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .card-title{
+        color: $colorTitulos;
+        color: rgb(97, 91, 91);
+    }
+
+
+}
+
+
+#inicio2{
+    background: $colorFondo;
+}
+
+
+.tabla{
+
+   margin: 20px;
+}
+
+.infoCursos{
+    margin:20px;
+
+    img{
+        width: 400px;
+        height: 400px;
+
+    }
+
+}
+
+.productos{
+    
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 50px;
+        margin-bottom: 50px;
+    
+        .cuadro{
+            padding: 5px;
+            margin: 5px;
+            width: 300px;
+            text-align: center;
+    
+            figure{
+                position: relative;
+                box-shadow: 0px 15px 25px rgba(121, 49, 163, 0.5);
+                cursor: pointer;
+    
+                 img{
+                     width: 300px;
+                     height: 300px;
+                     transition: all 500ms ease-out;
+                 }
+    
+                .capa{
+                    position:absolute;
+                    height: 100%;
+                    width: 100%;
+                    top: 0;
+                    background: rgba(135, 91, 160, 0.9);
+                    transition: all 500ms ease-out;
+                    opacity: 0;
+                    visibility: hidden;
+                    text-align: center;
+                    align-content: center;
+                    p {
+                        margin-top:50%;
+                        
+                    }
+                }
+    
+            }
+            figure:hover > .capa {
+                opacity: 1;
+                visibility: visible;
+                
+    
+    
+            }
+        }
+
+}
+
+
+footer{
+    background-color:black;
+    padding-top: 30px;
+    margin: auto;
+    overflow: hidden;
+    
+
+    .footer-container{
+        display: flex;
+        width: 100%;
+        justify-self: space-evenly;
+        padding-bottom: 25px ;
+    }
+
+    .copyrigth{
+        padding: 15px 0;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+
+        h2{
+            font-size: 12px;
+            margin: 25px 0 15px 25px;
+            color: blanchedalmond;
+        }
+
+        .redes-sociales{
+            display: flex !important;
+            text-align: center;
+            font-size: 24px;
+            margin-right: 15px;
+
+
+            a{
+                align-items: center;
+            }
+
+            .bubble{
+                width: 50px;
+                height: 50px;
+                background-color: gray;
+                border-radius: 50px;
+                margin: 10px;
+                filter: drop-shadow(0 0 10px #000);
+
+                .i{
+                    color: #ccc;
+                    padding: 12px 0;
+
+                }
+            }
+
+            .bubble:hover{
+                transform: scale(1.1);
+                background-color: $colorFondo;
+                            }
+
+            .bubble:hover i {
+                color:#b428a2;
+                
+
+            }
+
+
+
+
+
+        }
+    }
+}
